@@ -1,3 +1,8 @@
+<?php
+
+if($_POST["email"]){
+  mail("rakshamp97@gmail.com","New Message from website",
+       $_POST["Hi"], "email");}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +41,7 @@
       <a href="index.php" class="logo"><img src="images/logodo.svg" alt="logo"/></a>
       <h2 class="modal-title">Reach out to us!</h2>
       <p class="modal-subtitle">We're growing and constantly onboarding new MSMEs so we'd love to hear from you before we find you.</p>
-      <form class='form' name='doomoutForm' method='POST'><input type='hidden' name='form-name' value='doomoutForm' />
+      <form class='form' name='doomoutForm' method='POST' action="index.php"><input type='hidden' name='form-name' value='doomoutForm' />
         <div class="group">
           <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
           <label for="first-name">First name</label>
@@ -49,6 +54,11 @@
         </div>
         <button type="submit" class="button">Reach out to us!</button>
       </form>
+      <?php
+      if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $first-name = $_POST["first-name"];
+        $email = $_POST["email"];}
+        ?>
     </div>
   </div>
 </div>

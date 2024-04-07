@@ -165,6 +165,31 @@
     </footer>
     </div>
   </div>
+
+<script>
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiVYZIp_Zccp5PNbJBvWoRGlQUxaSwP3KKh7yQl4qgFb5tdJ3FMzyBMAjNQHkTdmg4kA/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+</script>
+  
+  
   <script src="./js/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/scripts.min.js"></script>
 <script>
@@ -212,23 +237,6 @@
       $('body').toggleClass('no-scroll');
     });
 
-    // Reserve username form
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var $form = $(this);
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        $('.form-content').addClass('form-content-hide');
-        $('.success').addClass('success-show');
-      });
-    });
-
-    // Save user's first name
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var value = $("#firstName").val();
-      $('.first-name').text("Thank you," + " " + value + "!");
-    });
-
     // Feather icons
     feather.replace()
 
@@ -243,28 +251,7 @@
 
   });
 </script>
-<script>
-   const form = document.querySelector("#form")
-   const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiVYZIp_Zccp5PNbJBvWoRGlQUxaSwP3KKh7yQl4qgFb5tdJ3FMzyBMAjNQHkTdmg4kA/exec'
-
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('Success!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('Error!', error.message)
-         submitButton.disabled = false
-
-       }
-       )
-   })
-</script>
+  
 </body>
 
 </html>

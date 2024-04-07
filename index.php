@@ -3,6 +3,7 @@
 if($_POST["email"]){
   mail("rakshamp97@gmail.com","New Message from website",
        $_POST["Hi"], "email");}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

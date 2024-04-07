@@ -27,13 +27,13 @@
   <button type="button" class="modal-close modal-toggle"><i class="icon" data-feather="x"></i><span class="hide-mobile">ESC</span></button>
   <div class="modal-content">
     <div class="success">
-      <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"/></a>
+      <a href="index.php" class="logo"><img src="images/logo.svg" alt="logo"/></a>
       <h2 class="modal-title first-name" id="title-name"></h2>
       <p>Thank you for writing to us. We shall respond to you within 24 hours. </p>
-      <a href="index.html" class="button">Back home</a>
+      <a href="index.php" class="button">Back home</a>
     </div>
     <div class="form-content">
-      <a href="index.html" class="logo"><img src="images/logodo.svg" alt="logo"/></a>
+      <a href="index.php" class="logo"><img src="images/logodo.svg" alt="logo"/></a>
       <h2 class="modal-title">Reach out to us!</h2>
       <p class="modal-subtitle">We're growing and constantly onboarding new MSMEs so we'd love to hear from you before we find you.</p>
       <form class='form' name='doomoutForm' method='POST'><input type='hidden' name='form-name' value='doomoutForm' />
@@ -53,7 +53,7 @@
   </div>
 </div>
   <div class="content">
-    <a href="index.html" class="logo"><img src="images/logodo.png" alt="logo"/></a>
+    <a href="index.php" class="logo"><img src="images/logodo.png" alt="logo"/></a>
     <div class="hero">
       <h1 class="title">We support MSMEs in harnessing the power of data to enhance efficiency, streamline operations, and drive growth.</h1>
       <h1 class="title shift clip">
@@ -161,7 +161,7 @@
       </div>
     </section>
     <footer class="footer">
-      <p>&copy; Doomout</p>
+      <p>&copy; Missing Edge</p>
     </footer>
     </div>
   </div>

@@ -829,16 +829,16 @@ button {
 }
 
 .logo {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     z-index: 2;
-    top: 0
+    top: 50
 }
 
 .logo img {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    width: 110px
+    width: 100px
 }
 
 .logo:hover img {

@@ -829,8 +829,8 @@ button {
 }
 
 .logo {
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     z-index: 2;
     top: 0
 }

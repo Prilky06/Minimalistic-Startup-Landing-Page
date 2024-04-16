@@ -829,7 +829,7 @@ button {
 }
 
 .logo {
-    height: auto;
+    height: 50%;
     width: auto;
     z-index: 2;
     top: 0

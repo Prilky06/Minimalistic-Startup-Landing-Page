@@ -838,7 +838,7 @@ button {
 .logo img {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    width: 5000px
+    width: auto
 }
 
 .logo:hover img {

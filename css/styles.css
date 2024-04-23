@@ -1016,8 +1016,8 @@ button {
 }
 
 .content-blurred {
-    -webkit-filter: blur(40px);
-    filter: blur(40px)
+    -webkit-filter: blur(200px);
+    filter: blur(200px)
 }
 
 @media (max-width: 900px) {

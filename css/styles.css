@@ -588,13 +588,13 @@ h2,
     font-weight: normal;
     font-family: "colfax-light", sans-serif;
     line-height: 1.6;
-    font-size: 40rem;
+    font-size: 40px;
     color: #222
 }
 
 h2,
 .h2 {
-    font-size: 36rem
+    font-size: 36px
 }
 
 h3,
@@ -602,7 +602,7 @@ h3,
     letter-spacing: -1px;
     font-weight: normal;
     font-family: "colfax-bold", sans-serif;
-    font-size: 16rem;
+    font-size: 16px;
     color: #000000;
 }
 
@@ -614,7 +614,7 @@ form .group label,
 a {
     letter-spacing: -0.3px;
     font-family: "colfax-light", sans-serif;
-    font-size: 16rem;
+    font-size: 16px;
     line-height: 2;
     color: #222
 }
@@ -635,7 +635,7 @@ a:hover {
     .modal .modal-content .modal-title,
     h2,
     .h2 {
-        font-size: 30rem
+        font-size: 30px
     }
 }
 
@@ -1016,8 +1016,8 @@ button {
 }
 
 .content-blurred {
-    -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem)
+    -webkit-filter: blur(400px);
+    filter: blur(400px)
 }
 
 @media (max-width: 900px) {
@@ -1530,7 +1530,7 @@ form .button {
 
 .footer p {
     color: #222;
-    font-size: 12px;
+    font-size: 36px;
 }
 
 @media (max-width: 900px) {
@@ -1754,13 +1754,13 @@ h2,
     font-weight: normal;
     font-family: "colfax-light", sans-serif;
     line-height: 1.6;
-    font-size: 40rem;
+    font-size: 40px;
     color: #222
 }
 
 h2,
 .h2 {
-    font-size: 36rem
+    font-size: 36px
 }
 
 h3,
@@ -1768,7 +1768,7 @@ h3,
     letter-spacing: -1px;
     font-weight: normal;
     font-family: "colfax-bold", sans-serif;
-    font-size: 16rem;
+    font-size: 16px;
     color: #000000;
 }
 
@@ -1796,7 +1796,7 @@ a:hover {
     .h1,
     h2,
     .h2 {
-        font-size: 30rem
+        font-size: 30px
     }
 }
 
